@@ -31,21 +31,21 @@ def blackout(email, words):
             around it so it can't be detected inside other words'''
             t = re.compile(r'\b{0}\b'.format(wrd))
             v = t.search(string)
-            print(string)
-            print (wrd)
-            print(v)
+            '''print(string)'''
+            '''print (wrd)'''
+            '''print(v)'''
             if v is None:
-                `````````print("Did not match the word, check next one")
+                '''print("Did not match the word, check next one")'''
             else:
                 boolVal = True
                 stringBool.append(boolVal)
-                print("Matching word was found move to next string")
+                '''print("Matching word was found move to next string")'''
                 break
         if boolVal is False:
             stringBool.append(boolVal)
     ''' I now have a list of which strings have bad words in them so
         now I need to just put @ symbols in all the spots of those strings '''
-    print(stringBool)
+    '''print(stringBool)'''
     splitAnswer = list(email)
     ''' Go character by character, checking for .!? and when encountering one
         increment counter and check boolean array to see if there was a bad word '''
